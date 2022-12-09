@@ -38,7 +38,7 @@ build.bat
 
 Una volta eseguito all'Url [https://localhost:5001/swagger/1.0.0/swagger.json](https://localhost:5001/swagger/1.0.0/swagger.json) sarà disonibile il file con le specifiche  in formato OpenAPIv3
 
-Le api di test saranno disponibili all'Url
+Gli endpoint dell' API di test saranno disponibili all'Url
 
 - https://localhost:5001/datetime/v1/echo
 - https://localhost:5001/datetime/v1/status
