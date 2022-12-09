@@ -1,6 +1,6 @@
 # Starter kit per la pubblicazione di API interoperabili in C# (aspnetcore 7.0)
 
-https://github.com/fderrigo/api-starter-kit-aspnetcore/actions/workflows/dotnet.yml/badge.svg
+![CI Result](https://github.com/fderrigo/api-starter-kit-aspnetcore/actions/workflows/dotnet.yml/badge.svg)
 
 Questo repository contiene il template di un'API interoperabile scritta in C#.
 
