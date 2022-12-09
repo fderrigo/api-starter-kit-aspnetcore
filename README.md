@@ -2,10 +2,6 @@
 
 Questo repository contiene il template di un'API interoperabile scritta in C#.
 
-##Contenuto
-
-- Un progetto di esempio in src/Core_SK
-
 
 ## Istruzioni
 
@@ -39,6 +35,12 @@ build.bat
 ```
 
 Una volta eseguito all'Url [https://localhost:5001/swagger/1.0.0/swagger.json](https://localhost:5001/swagger/1.0.0/swagger.json) sarà disonibile il file con le specifiche  in formato OpenAPIv3
+
+Le api di test saranno disponibili all'Url
+
+- https://localhost:5001/datetime/v1/echo
+- https://localhost:5001/datetime/v1/status
+
 
 
 ## Prerequisiti
