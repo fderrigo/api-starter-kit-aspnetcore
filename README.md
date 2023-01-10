@@ -44,6 +44,14 @@ Gli endpoint dell' API di test saranno disponibili all'Url
 - https://localhost:5001/datetime/v1/status
 
 
+### Run con docker-compose
+
+Si può avviare il progetto con il comando
+
+```
+docker-compose up
+```
+
 
 ## Prerequisiti
 
