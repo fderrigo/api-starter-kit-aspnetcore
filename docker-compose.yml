@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  web:
+    image: mcr.microsoft.com/dotnet/sdk:7.0
+    volumes: 
+      - ".:/source"
+    working_dir: "/source"
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    command: >
+      sh -c "dotnet restore src/Core_SK &&
+      dotnet build src/Core_SK &&
+      dotnet dev-certs https &&
+      dotnet run --project src/Core_SK/Core_SK.csproj --launch-profile web"
