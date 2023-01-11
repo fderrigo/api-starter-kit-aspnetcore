@@ -4,6 +4,10 @@
 
 Questo repository contiene il template di un'API interoperabile scritta in C#.
 
+## Contenuto
+
+- Un progetto di esempio in src/Core_SK
+
 
 ## Istruzioni
 
@@ -20,6 +24,8 @@ Gli step per la creazione di API interoperabili sono:
 Le specifiche devono essere scritte in formato OpenAPIv3
 e rispettando le [Linee Guida di interoperabilità](https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs).
 
+- [Introduzione ad OpenAPI](https://docs.google.com/presentation/d/1blql0E_zcbq7r-wzmslgJPiW7ELkYlIn9_fqIVEXr4A)
+- [REST nel nuovo modello di interoperabilità](https://docs.google.com/presentation/u/1/d/1L6R4ZKhLoZAPEmai1KSED1nrq0GNrx3-TU53sGhfrO8/)
 
 
 ## Run
