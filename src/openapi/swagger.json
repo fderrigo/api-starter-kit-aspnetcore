@@ -1,0 +1,271 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Ora esatta.",
+    "description": "Ora esatta. (ASP.NET Core 7)",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "name": "Filippo D'Errigo",
+      "url": "https://www.linkedin.com/in/filippo-d-errigo-095b416b/",
+      "email": "filippo.derrigo@gmail.com"
+    },
+    "version": "1.0.0",
+    "x-summary": "Ora esatta. (ASP.NET Core 7)"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:5001/datetime/v1",
+      "description": "Descrizione Server"
+    }
+  ],
+  "paths": {
+    "/echo": {
+      "get": {
+        "tags": [
+          "Api"
+        ],
+        "summary": "Ritorna un timestamp in formato RFC5424.",
+        "description": "Ritorna un timestamp in formato RFC5424 prendendola dal server attuale.",
+        "responses": {
+          "200": {
+            "description": "Il server ha ritornato il timestamp.",
+            "headers": {
+              "X-RateLimit-Limit": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Limit"
+              },
+              "X-RateLimit-Remaining": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Remaining"
+              },
+              "X-RateLimit-Reset": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Reset"
+              }
+            },
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Timestamps"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Timestamps"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Timestamps"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Timestamps"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Timestamps"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Problem"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Bad Request",
+            "headers": {
+              "Retry-After": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/Retry-After"
+              },
+              "X-RateLimit-Limit": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Limit"
+              },
+              "X-RateLimit-Remaining": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Remaining"
+              },
+              "X-RateLimit-Reset": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Reset"
+              }
+            },
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Problem"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Too Many Requests",
+            "headers": {
+              "Retry-After": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/Retry-After"
+              }
+            },
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Problem"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/status": {
+      "get": {
+        "tags": [
+          "Api"
+        ],
+        "summary": "Ritorna lo stato dell'applicazione.",
+        "description": "Ritorna lo stato dell'applicazione. A scopo di test, su base randomica puo' ritornare un errore.",
+        "responses": {
+          "200": {
+            "description": "Il server ha ritornato lo status. In caso di problemi ritorna sempre un problem+json.",
+            "headers": {
+              "X-RateLimit-Limit": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Limit"
+              },
+              "X-RateLimit-Remaining": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Remaining"
+              },
+              "X-RateLimit-Reset": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Reset"
+              }
+            },
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Problem"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Problem"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Bad Request",
+            "headers": {
+              "Retry-After": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/Retry-After"
+              },
+              "X-RateLimit-Limit": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Limit"
+              },
+              "X-RateLimit-Remaining": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Remaining"
+              },
+              "X-RateLimit-Reset": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Reset"
+              }
+            },
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Problem"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Too Many Requests",
+            "headers": {
+              "Retry-After": {
+                "$ref": "https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/Retry-After"
+              }
+            },
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoreSK.Models.Problem"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CoreSK.Models.Problem": {
+        "type": "object",
+        "properties": {
+          "detail": {
+            "maxLength": 4096,
+            "pattern": "^.{0,1024}$",
+            "type": "string",
+            "description": " A human readable explanation specific to this occurrence of the problem. You MUST NOT expose internal informations, personal data or implementation details through this field. \r\n`\r\n detail` supports localized patterns whereas `title` pattern is only in ascii.",
+            "nullable": true,
+            "example": "Request took too long to complete. "
+          },
+          "instance": {
+            "maxLength": 2048,
+            "type": "string",
+            "description": "An absolute URI that identifies the specific occurrence of the problem. It may or may not yield further information if dereferenced.",
+            "format": "uri",
+            "nullable": true
+          },
+          "status": {
+            "maximum": 600,
+            "minimum": 100,
+            "type": "integer",
+            "description": "The HTTP status code generated by the origin server for this occurrence of the problem.",
+            "format": "int32",
+            "nullable": true,
+            "example": 503
+          },
+          "title": {
+            "maxLength": 64,
+            "pattern": "^[ -~]{0,64}$",
+            "type": "string",
+            "description": "A short, summary of the problem type. Written in english and readable for engineers (usually not suited for non technical stakeholders and not localized); example: Service Unavailable",
+            "nullable": true,
+            "example": "Service Unavailable"
+          },
+          "type": {
+            "maxLength": 2048,
+            "type": "string",
+            "description": "An absolute URI that identifies the problem type.  When dereferenced, it SHOULD provide human-readable documentation for the problem type (e.g., using HTML).",
+            "format": "uri",
+            "default": "about:blank",
+            "nullable": true,
+            "example": "https://tools.ietf.org/html/rfc7231#section-6.6.4"
+          }
+        },
+        "additionalProperties": false,
+        "description": "  This schema describes RFC7807 Problem Details for HTTP APIs.\r\nThe specification is intentionally flexible, and allows to adapt\r\nthe schema adding further properties, or not enforcing any of the properties\r\nbelow.\r\n\r\nTo make this schema safe by default, additionalProperties are forbidden though.\r\n In case you need them, you can either re-define Problem or extend it\r\nusing `allOf`."
+      },
+      "CoreSK.Models.Timestamps": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "description": "Gets or Sets Timestamp",
+            "format": "date-time",
+            "nullable": true,
+            "example": "2022-12-09T16:50:35.588Z"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Un Timestamp in RFC5424"
+      }
+    }
+  }
+}

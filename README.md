@@ -7,6 +7,7 @@ Questo repository contiene il template di un'API interoperabile scritta in C#.
 ## Contenuto
 
 - Un progetto di esempio in src/Core_SK
+- Una directory src/openapi con le specifiche
 
 
 ## Istruzioni
