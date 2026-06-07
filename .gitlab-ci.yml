@@ -1,0 +1,39 @@
+# GitLab CI — build & test ASP.NET Core 7.0
+
+image: mcr.microsoft.com/dotnet/sdk:7.0
+
+variables:
+  DOTNET_CLI_TELEMETRY_OPTOUT: "1"
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "1"
+  NUGET_PACKAGES: "${CI_PROJECT_DIR}/.nuget/packages"
+
+cache:
+  key:
+    files:
+      - src/Core_SK/Core_SK.csproj
+  paths:
+    - .nuget/packages
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  script:
+    - dotnet restore src/Core_SK/Core_SK.csproj
+    - dotnet build src/Core_SK/Core_SK.csproj --configuration Release --no-restore
+  artifacts:
+    paths:
+      - src/Core_SK/bin/Release/
+    expire_in: 1 hour
+
+test:
+  stage: test
+  script:
+    - dotnet test --configuration Release
+  rules:
+    # Esegui solo se esistono progetti di test (*.Tests/*Test*.csproj)
+    - exists:
+        - "**/*Test*.csproj"
+        - "**/*Tests*.csproj"

@@ -1,0 +1,17 @@
+api-starter-kit-aspnetcore
+Copyright 2026 Filippo D'Errigo
+
+This product includes software developed by Filippo D'Errigo.
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+---
+
+Portions of this project (the API scaffolding under src/Core_SK —
+attributes, filters and controller stubs) were originally produced by the
+Swagger Codegen / OpenAPI Generator tooling from an OpenAPI v3 specification.
+Generated code is the property of its author per the generator's license terms.
+
+The project follows the interoperability guidelines published by
+Team Digitale (Dipartimento per la trasformazione digitale) / AgID:
+https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs
