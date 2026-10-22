@@ -102,17 +102,15 @@ docker-compose up
 - [RFC 7807 — Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/html/rfc7807)
 - [OpenAPI Specification 3.0](https://spec.openapis.org/oas/v3.0.3)
 
-## Sul blog
+## Approfondimenti
 
-Scheda del progetto nella sezione Labs di [derrigo.it](https://www.derrigo.it): [API Starter Kit: ASP.NET Core](https://www.derrigo.it/Products/Info/7/api-starter-kit-asp-net-core)
+Il progetto è presentato nella sezione Labs di [derrigo.it](https://www.derrigo.it): [API Starter Kit: ASP.NET Core](https://www.derrigo.it/Products/Info/7/api-starter-kit-asp-net-core).
 
 Articoli correlati:
 
 - [Sviluppo software nella PA: complessità by default](https://www.derrigo.it/Articles/Info/2/sviluppo-software-nella-pa-complessita-by-default)
 - [L'ecosistema digitale nazionale](https://www.derrigo.it/Articles/Info/4/l-ecosistema-digitale-nazionale)
 - [Paperopoli: un Comune finto costruito sul serio](https://www.derrigo.it/Articles/Info/8/paperopoli-un-comune-finto-costruito-sul-serio)
-
-Chi sono: [Filippo D'Errigo](https://www.derrigo.it/Pages/Info/1/chi-sono)
 
 ## Licenza
 
@@ -124,4 +122,4 @@ da una specifica OpenAPI v3 — vedi [`NOTICE`](NOTICE) per i dettagli.
 
 ## Autore
 
-**Filippo D'Errigo** — <filippo.derrigo@gmail.com>
+**Filippo D'Errigo** · [Chi sono](https://www.derrigo.it/Pages/Info/1/chi-sono) · [derrigo.it](https://www.derrigo.it) · [GitHub](https://github.com/fderrigo) · <filippo.derrigo@gmail.com>
