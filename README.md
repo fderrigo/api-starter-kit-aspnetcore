@@ -102,6 +102,18 @@ docker-compose up
 - [RFC 7807 — Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/html/rfc7807)
 - [OpenAPI Specification 3.0](https://spec.openapis.org/oas/v3.0.3)
 
+## Sul blog
+
+Scheda del progetto nella sezione Labs di [derrigo.it](https://www.derrigo.it): [API Starter Kit: ASP.NET Core](https://www.derrigo.it/Products/Info/7/api-starter-kit-asp-net-core)
+
+Articoli correlati:
+
+- [Sviluppo software nella PA: complessità by default](https://www.derrigo.it/Articles/Info/2/sviluppo-software-nella-pa-complessita-by-default)
+- [L'ecosistema digitale nazionale](https://www.derrigo.it/Articles/Info/4/l-ecosistema-digitale-nazionale)
+- [Paperopoli: un Comune finto costruito sul serio](https://www.derrigo.it/Articles/Info/8/paperopoli-un-comune-finto-costruito-sul-serio)
+
+Chi sono: [Filippo D'Errigo](https://www.derrigo.it/Pages/Info/1/chi-sono)
+
 ## Licenza
 
 Distribuito con licenza **[Apache License 2.0](LICENSE)** — Copyright © 2026 Filippo D'Errigo.
